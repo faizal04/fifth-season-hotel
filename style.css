@@ -48,11 +48,7 @@ html::-webkit-scrollbar-thumb {
   height: 100%;
   background-color: #B5B6BA ;
 } 
-/* body {
-  border: 5px solid red;
-  background: #d41b59d3;
-  z-index: 500;
-} */
+
 section {
   padding: 5rem 7%;
 }
@@ -92,7 +88,6 @@ section {
   height: 13.1vh;
 }
 .header .logo img {
-  filter: invert();
   height: 10vh;
 }
 .header .logo {
@@ -375,7 +370,6 @@ section {
   flex: 1 1 40rem;
 }
 .faqs .row .image img {
-  mix-blend-mode: luminosity;
   width: 100%;
 }
 .faqs .row .content .box {
@@ -391,7 +385,7 @@ section {
   font-size: 1.6rem;
   padding: 1.5rem 2rem;
   line-height: 2;
-  color: var(--secondary);
+  color: var(--black);
   box-shadow: var(--box-shadow);
   display: none;
 }
