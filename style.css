@@ -1,10 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap);
+@import url(https://boxonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap);
 :root {
-  --primary: #FFD9B8;
-  --secondary: #3A0CA3;
-  --blue: #7209B7; 
-  --pink:  #F72585; 
-  --lgblue: #4361EE;
+  --primary: #F5F5F5;
+  --secondary: #333333;
+  --blue: #FFFF00; 
+ --richbrown:  #AA6C39;
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --animate-duration: 2s;
 }
@@ -55,7 +54,7 @@ section {
 }
 .heading {
   font-size: 4rem;
-  color: var(--primary);
+  color: var(--richbrown);
   text-align: center;
   font-weight: bolder;
   margin-bottom: 3rem;
@@ -64,14 +63,14 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
-  background: var(--pink);
   border-radius: 0.5rem;
-  color: var(--);
+  color: black;
+  background-color: grey;
   font-size: 1.7rem;
   cursor: pointer;
 }
 .btn:hover {
-  color: var(--pink);
+  color: var(--richbrown);
   background: var(--blue);
 }
 .header {
@@ -103,29 +102,29 @@ section {
   margin: 0 1rem;
 }
 .header .navbar a:hover {
-  color: var(--lgblue);
+  color: var(--richbrown);
   letter-spacing: 0.2rem;
   
 }
 .header .navbar .btn {
   margin-top: 0;
-  color: #d7d6d2;
+  color: black;
 }
 .header .navbar .btn:hover {
-  color: var(--pink);
+  color: var(--richbrown);
 }
 #menu-btn {
   display: none;
   font-size: 2.5rem;
   margin-left: 1.7rem;
   cursor: pointer;
-  color: white;
+  color: rgb(52, 49, 49);
 
 }
 #menu-btn:hover,
 .footer .box-container .box a:hover,
 .footer .credit span {
-  color: var(--lgblue);
+  color:  #AA6C39;
 
 }
 .home {
@@ -185,19 +184,19 @@ section {
 }
 .about .row .content h3 {
   font-size: 3.5rem;
-  color: var(--pink);
+  color: var(--primary);
   padding: 2rem 0;
 }
 .about .row .content p,
 .room .slide .content p {
   font-size: 1.6rem;
-  color: var(--lgblue);
+  color: var(--secondary);
   padding: 1rem 0;
   line-height: 1.8;
 }
 
 .room h1 {
-  color: var(--pink);
+  color: var(--richbrown);
 }
 .room .slide {
   background: var(--white);
@@ -284,7 +283,7 @@ section {
   padding: 0.5rem 0;
 }
 #gallery h1{
-  color: var(--pink);
+  color: var(--richbrown);
 }
 .gallery .slide {
   height: 30rem;
@@ -297,7 +296,7 @@ section {
   object-fit: cover;
 }
 #review .heading{
-  color: var(--pink);
+  color: var(--richbrown);
 
 }
 
@@ -332,7 +331,7 @@ section {
 }
 .review .slide i {
   font-size: 3rem;
-  color: var(--secondary);
+  color: var(--blue);
 }
 .review .slide p {
   padding-bottom: 1.5rem;
@@ -355,7 +354,6 @@ section {
   object-fit: cover;
 }
 .review .slide .user h3 {
-    color: var(--pink);
     font-size: 1.5rem;
     font-weight: 700;
   }
@@ -376,6 +374,8 @@ section {
   flex: 1 1 40rem;
 }
 .faqs .row .image img {
+mix-blend-mode:luminosity;
+  filter: invert();
   width: 100%;
 }
 .faqs .row .content .box {
@@ -383,7 +383,7 @@ section {
 }
 .faqs .row .content .box h3 {
   font-size: 2rem;
-  color: var(--pink);
+  color: var(--richbrown);
   padding: 1.5rem;
   cursor: pointer;
 }
@@ -391,12 +391,15 @@ section {
   font-size: 1.6rem;
   padding: 1.5rem 2rem;
   line-height: 2;
-  color: var(--blue);
+  color: var(--secondary);
   box-shadow: var(--box-shadow);
   display: none;
 }
 .faqs .row .content .box.active p {
   display: inline-block;
+}
+.faqs .heading{
+  color: var(--richbrown);
 }
 .reservation form {
   padding: 2rem;
@@ -408,10 +411,10 @@ section {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.footer .share a,
+
 .reservation form .container .box p {
   font-size: 1.8rem;
-  color: var(--pink);
+  color: var(--richbrown);
 }
 .reservation form .container .box .input {
   font-size: 1.8rem;
@@ -437,7 +440,7 @@ section {
 .footer .box-container .box a {
   font-size: 1.6rem;
   display: block;
-  color: var(--pink);
+  /* color: var(--pink); */
   padding: 1rem 0;
 }
 .footer .box-container .box a i {
@@ -459,8 +462,8 @@ section {
   margin: 0.3rem;
 }
 .footer .share a:hover {
-  color: var(--pink);
-  background: darkblue;
+color: black;
+  background:  wheat;
   transform: rotate(360deg);
 }
 .footer .credit {
@@ -522,9 +525,10 @@ section {
   }
 }
 .ccolor {
-  color: var(--blue);
+  color: var(--richbrown);
 }
 .footer .box-container .box a {
+  color: wheat;
   text-transform: uppercase;
 }
 .credit {
@@ -534,18 +538,23 @@ section {
 body {
   background: #d7d6d2;
 }
-.box option{ 
-  color: var(--lgblue);
-  opacity: 1; 
-}
+
 .box .input{ 
   color: var(--lgblue);
   opacity: 1; 
 }
+.box option{
+  color: black;
+}
 
 .box{
-  color: var(--lgblue);
+  color: var(--secondary);
 }
 ::placeholder{
-  color: var(--lgblue);
+  color: var(--secondary);
+}
+.footer .share a 
+{
+  color: white;
+  
 }
