@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap);
 :root {
-  --primary: #b11d1e;
-  /* --secondary: #b11d1e; */
-  --black: #333; 
-  --inkwell:  #F1EDF2; 
+  --primary: #FFD9B8;
+  --secondary: #3A0CA3;
+  --blue: #7209B7; 
+  --pink:  #F72585; 
+  --lgblue: #4361EE;
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --animate-duration: 2s;
 }
@@ -46,7 +47,7 @@ html::-webkit-scrollbar-thumb {
  .bg{
   width: 100;
   height: 100%;
-  background-color: #B5B6BA ;
+  background-color: var(--primary) ;
 } 
 
 section {
@@ -63,14 +64,15 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
-  background: #b11d1e;
+  background: var(--pink);
   border-radius: 0.5rem;
-  color: var(--white);
+  color: var(--);
   font-size: 1.7rem;
   cursor: pointer;
 }
 .btn:hover {
-  background: #41517d;
+  color: var(--pink);
+  background: var(--blue);
 }
 .header {
   position: fixed;
@@ -78,7 +80,7 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #B5B6BA;
+  background: var(--primary);
   box-shadow: var(--box-shadow);
   display: flex;
   align-items: center;
@@ -101,16 +103,16 @@ section {
   margin: 0 1rem;
 }
 .header .navbar a:hover {
-
-  color: #b11d1e;
+  color: var(--lgblue);
   letter-spacing: 0.2rem;
+  
 }
 .header .navbar .btn {
   margin-top: 0;
-  color: var(--white);
+  color: #d7d6d2;
 }
 .header .navbar .btn:hover {
-  color: var(--white);
+  color: var(--pink);
 }
 #menu-btn {
   display: none;
@@ -118,11 +120,12 @@ section {
   margin-left: 1.7rem;
   cursor: pointer;
   color: white;
+
 }
 #menu-btn:hover,
 .footer .box-container .box a:hover,
 .footer .credit span {
-  color: #41517d;
+  color: var(--lgblue);
 
 }
 .home {
@@ -152,17 +155,15 @@ section {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
-  background: var(--white);
-  color: var(--black);
+  color: var(--pink);
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background: var(--primary);
-  color: var(--white);
+  color: var(--blue);
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 2rem;
+  font-size: rem;
 }
 .about .row {
   display: flex;
@@ -184,18 +185,19 @@ section {
 }
 .about .row .content h3 {
   font-size: 3.5rem;
-  color: #b11d1e;
+  color: var(--pink);
   padding: 2rem 0;
 }
 .about .row .content p,
 .room .slide .content p {
   font-size: 1.6rem;
-  color: #666;
+  color: var(--lgblue);
   padding: 1rem 0;
   line-height: 1.8;
 }
+
 .room h1 {
-  color: #b11d1e;
+  color: var(--pink);
 }
 .room .slide {
   background: var(--white);
@@ -221,7 +223,7 @@ section {
   position: absolute;
   top: 2.5rem;
   left: 2.5rem;
-  background: #b11d1e;
+  background: var(--secondary);
   color: var(--white);
   font-size: 1.7rem;
   padding: 0.5rem 1rem;
@@ -237,7 +239,7 @@ section {
   text-align: center;
   font-size: 2rem;
   background: var(--white);
-  color: var(--black);
+  color: var(--);
   border-radius: 50%;
 }
 .room .slide .image .fa-shopping-cart:hover {
@@ -281,6 +283,9 @@ section {
   color: #ebb91c;
   padding: 0.5rem 0;
 }
+#gallery h1{
+  color: var(--pink);
+}
 .gallery .slide {
   height: 30rem;
   position: relative;
@@ -292,7 +297,7 @@ section {
   object-fit: cover;
 }
 #review .heading{
-  color: var(--primary);
+  color: var(--pink);
 
 }
 
@@ -308,14 +313,14 @@ section {
   margin: 4rem 0;
 }
 .review .review-slider {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   padding: 2rem;
   width: 40%;
   height: 120%;
   margin-top: -4rem;
   margin-right: 60rem;
   padding-top: 6%;
-  color: var(--white);
+  color: var(--pink);
   box-shadow: var(--box-shadow);
 }
 .review .slide {
@@ -323,10 +328,11 @@ section {
 }
 .review .slide .heading,
 .review .slide p {
-  color: var(--white);
+  color: var(--lgblue);
 }
 .review .slide i {
-  font-size: 6rem;
+  font-size: 3rem;
+  color: var(--secondary);
 }
 .review .slide p {
   padding-bottom: 1.5rem;
@@ -349,7 +355,7 @@ section {
   object-fit: cover;
 }
 .review .slide .user h3 {
-    color: red;
+    color: var(--pink);
     font-size: 1.5rem;
     font-weight: 700;
   }
@@ -377,7 +383,7 @@ section {
 }
 .faqs .row .content .box h3 {
   font-size: 2rem;
-  color: var(--primary);
+  color: var(--pink);
   padding: 1.5rem;
   cursor: pointer;
 }
@@ -385,7 +391,7 @@ section {
   font-size: 1.6rem;
   padding: 1.5rem 2rem;
   line-height: 2;
-  color: var(--black);
+  color: var(--blue);
   box-shadow: var(--box-shadow);
   display: none;
 }
@@ -405,7 +411,7 @@ section {
 .footer .share a,
 .reservation form .container .box p {
   font-size: 1.8rem;
-  color: var(--primary);
+  color: var(--pink);
 }
 .reservation form .container .box .input {
   font-size: 1.8rem;
@@ -416,7 +422,7 @@ section {
   color: var(--black);
 }
 .footer {
-  background-color: var(--black);
+  background-color: var(--secondary);
 }
 .footer .box-container {
   display: grid;
@@ -431,11 +437,11 @@ section {
 .footer .box-container .box a {
   font-size: 1.6rem;
   display: block;
-  color: var(--white);
+  color: var(--pink);
   padding: 1rem 0;
 }
 .footer .box-container .box a i {
-  color: white;
+  color: var(--pink);
   padding-right: 0.5rem;
 }
 .footer .credit,
@@ -453,8 +459,8 @@ section {
   margin: 0.3rem;
 }
 .footer .share a:hover {
-  color: var(--white);
-  background: var(--primary);
+  color: var(--pink);
+  background: darkblue;
   transform: rotate(360deg);
 }
 .footer .credit {
@@ -480,12 +486,12 @@ section {
     top: 110%;
     right: -110%;
     width: 30rem;
-  background-color: #C9C4CF;
+  background-color: var(--primary);
     box-shadow: var(--box-shadow);
     border-radius: 0.5rem;
   }
   .header .navbar.active {
-    background: #B5B6BA;
+    background: var(--primary);
 
     right: 2rem;
     transition: 0.4s linear;
@@ -516,7 +522,7 @@ section {
   }
 }
 .ccolor {
-  color: #b11d1e;
+  color: var(--blue);
 }
 .footer .box-container .box a {
   text-transform: uppercase;
@@ -527,4 +533,19 @@ section {
 
 body {
   background: #d7d6d2;
+}
+.box option{ 
+  color: var(--lgblue);
+  opacity: 1; 
+}
+.box .input{ 
+  color: var(--lgblue);
+  opacity: 1; 
+}
+
+.box{
+  color: var(--lgblue);
+}
+::placeholder{
+  color: var(--lgblue);
 }
